@@ -4,6 +4,7 @@
 let Cart = function(items) {
     // this.items is an array of CartItem instances.
     this.items = items;
+    Cart.userChoice;
 };
 
 Cart.prototype.addItem = function(product, quantity) {
