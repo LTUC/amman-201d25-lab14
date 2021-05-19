@@ -1,1 +1,55 @@
-/* create a wonderful CSS HERE  */
+/* create a wonderful CSS HERE  */    /* create a wonderful CSS HERE  */
+
+    body {
+        height: 700px;
+        background-color: red;
+        background-image: linear-gradient(to bottom right, pink, gray);
+        }
+    
+        h1 {
+        color: purple;
+        padding: 10px;
+        position: relative;
+        bottom: 3px;
+        left: 85px;
+        font-size: 40px;
+        }
+    
+        .copy {
+        color: rgb(83, 82, 79);
+        font-size: larger;
+        font-weight: bolder;
+        }
+    
+        /* Catalog {
+                border: 1px solid color rgb(65, 5, 65);
+                background-color:rgb(141, 46, 109);
+                border-radius: 5px;
+                font: 14px;
+                color: rgb(20, 18, 20);
+                width: 600px;
+            } */
+    
+        fieldset > legend {
+        color: white;
+        background-color: purple;
+        font-weight: bold;
+        font-size: large;
+        align-items: left;
+        }
+        legend {
+        width: 80px;
+        padding: 8px;
+        margin-left: calc(100px - 35px );
+        }
+    
+        span {
+        font-size: medium;
+        color: purple;
+        }
+    
+        footer {
+        text-align: center;
+        color: black;
+        }
+    

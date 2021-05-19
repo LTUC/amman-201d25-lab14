@@ -1,32 +1,28 @@
 'use strict';
-
 // Cart constructor.
 let Cart = function(items) {
     // this.items is an array of CartItem instances.
     this.items = items;
+   console.log(this.items);
 };
-
 Cart.prototype.addItem = function(product, quantity) {
     // TODO: Fill in this instance method to create a new CartItem and add it to this.items
     this.items.push(new CartItem(product, quantity));
     console.log('array', this.items);
 };
-
 Cart.prototype.saveToLocalStorage = function() {
     // TODO: Fill in this instance method to save the contents of the cart to localStorage
     localStorage.setItem('cart', JSON.stringify(this.items));
 };
-
 Cart.prototype.removeItem = function(item) {
     // TODO: Fill in this instance method to remove one item from the cart.
     // Note: You will have to decide what kind of parameter to pass in here!
+    this.items.splice(item,1);
 };
-
 let CartItem = function(product, quantity) {
     this.product = product;
     this.quantity = quantity;
 };
-
 // Product contractor.
 let Product = function(filePath, name) {
     this.filePath = filePath;
@@ -34,7 +30,6 @@ let Product = function(filePath, name) {
     Product.allProducts.push(this);
 };
 Product.allProducts = [];
-
 function generateCatalog() {
     new Product('assets/bag.jpg', 'Bag');
     new Product('assets/banana.jpg', 'Banana');
@@ -57,6 +52,5 @@ function generateCatalog() {
     new Product('assets/water-can.jpg', 'Water Can');
     new Product('assets/wine-glass.jpg', 'Wine Glass');
 }
-
 // Initialize the app by creating the big list of products with images and names
 generateCatalog();
