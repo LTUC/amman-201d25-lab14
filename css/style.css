@@ -1,21 +1,27 @@
 /* create a wonderful CSS HERE  */
 
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Pattaya&display=swap');
+
+
 
 table, th, td {
     border: 1px solid black;
     background-color: pink;
   }
+  table {
+    width: 30%;
+  }
 
   body {
-    background-color: rgb(157, 223, 231);
-    color: rgb(53, 50, 50);
-    
-    font-size: 14px;
-    
-    margin: 5px;
-    padding: 5px;
+  padding: 5px;
     
     font-size: 100%;
+    margin: auto;
+width: 90%;
+background: rgb(238,174,202);
+background: radial-gradient(circle,rgb(283, 174,202,1) 0%,rgb(148, 187,233, 1) 100%);
     
   }
   p {
@@ -27,14 +33,20 @@ table, th, td {
     border: 2px grey;
   }
 
-  
-  h1{
-    /* text-align: center; */
+  main header h1{text-align: left;
+  background-color: gray;
+padding: 10px;
+margin: 10px 0;}
+  header h1{
+    text-align: center;
     font-size: 32px;
     font-weight: bold;
-  
-    margin-top: 20px;
+    font-family: 'Pattaya', sans-serif;
+    margin-top: 20px 0;
   }
+  header{background-color: pink;}
+  
+ 
   
   h2 {
     font-size: 18px;
@@ -50,23 +62,68 @@ table, th, td {
     color: slategray;
     margin: 15px;
   }
-  nav{  background-color: gray;
+  nav{  
+    /* background-color: gray; */
 padding: 10px;
-margin: 20px 0;}
+margin: 10px 0;
+text-align: center;
+
+}
   ul li {
     display: inline-block;
+    text-align: center;
+  margin: 30px  ;}
+  
+    nav ul li a{text-decoration: none;
+    color: rgb(66, 4, 85);
+  font-weight: bold;
+}
     
   
-  }
+  .copy{padding: 20px;
+    font-family: 'Goblin One', cursive;
+    
+    }
+    fieldset {
+      background-color: #eeeeee;
+    }
+    
+    legend {
+      background-color: gray;
+      color: white;
+      padding: 5px 10px;
+    }
+    
+    input {
+      margin: 5px;
+    }
   
-  #btn{
-    background:rgb(17, 52, 87);
+  
+    #cartContents{background: #ff9999;
+      padding: 20px;
+      font-family: 'Goblin One', cursive;}
+
+footer{background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;}
+
+
+
+
+
+
+
+
+
+  /* #btn{
+    background:pink;
     
     font-size: 16px;
     
     padding:24px;
     margin: 30px;
-  }
+  } */
   
  
   
